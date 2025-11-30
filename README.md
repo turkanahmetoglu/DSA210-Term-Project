@@ -54,6 +54,8 @@ By revealing the music features that are most strongly associated with happiness
 - **Year:** The year of the observation, used to align with YouTube trends
 - **Happiness Score:** The main dependent variable (overall happiness/well-being score)
 - **Healthy Life Expectancy:** Life expectancy in years (optional control variable)
+- **GDP per Capita:** Economic factor (optional control variable)
+- **Freedom to Make Life Choices:** Perceived freedom score (optional control variable)
 
 ## Tools and Technologies
 I will use the following tools and technologies to collect, process, analyze, and visualize the data:
@@ -68,4 +70,4 @@ This project aims to analyze the relationship between a country's music preferen
 
 The first, YouTube Trending Music Data (sourced from Kaggle's Trending YouTube Video Statistics), will be filtered to focus exclusively on music videos using the video category and metadata (title, tags). Key features like views, and likes will be extracted and then aggregated at the country-year level. The derived metrics will include the total number of trending music videos, average engagement scores, and an analysis of genre distribution and emotional tone derived from the video text.
 
-The second dataset utilized is the World Happiness Report Data (2015–2024 from Kaggle), which provides each country's overall happiness score and a key explanatory variable, healthy life expectancy. The critical step is merging and aligning this data with the aggregated music trends by matching the country and year fields. The final stage involves rigorous data preparation—including cleaning, normalization, and handling inconsistencies—to create a singular, clean, and comprehensive dataset. This final dataset will serve as the basis for exploratory analysis, hypothesis testing, and predictive modeling, enabling the analysis of how national music preferences correlate with well-being.
+The second dataset is the World Happiness Report Data (2015–2024 from Kaggle), which provides a country's overall happiness score along with key explanatory variables such as GDP per capita, freedom to make life choices, and healthy life expectancy. Crucially, the country and year fields from both datasets will be used to merge and align the aggregated music trends with the corresponding happiness and economic scores. The final stage involves rigorous data preparation, including cleaning, normalization, and handling any missing or inconsistent data points, to create a singular, clean, and comprehensive dataset ready for exploratory analysis, hypothesis testing, and potential predictive modeling. This carefully constructed dataset will allow for the analysis of how national music preferences correlate with well-being.
