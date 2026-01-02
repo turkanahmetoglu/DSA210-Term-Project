@@ -77,3 +77,19 @@ Contrary to the initial hypothesis, my analysis revealed no significant positive
 - **Statistical Result:** I observed a weak negative correlation ($r = -0.135$) with a p-value of $0.192$.
 - **Interpretation:** Since the p-value exceeds the standard significance threshold ($p > 0.05$), this concludes that national music preference is not a reliable predictor of national happiness.
 - **Discussion:** The slight negative trend, while statistically insignificant, hints at a potential "Escapism Phenomenon." Populations in countries with lower happiness scores might consume upbeat, positive music as a coping mechanism, while happier nations may feel comfortable exploring sadder or more complex themes in their top charts.
+
+## Machine Learning Analysis
+
+To complement the exploratory and statistical analyses, supervised machine learning models were applied to examine whether average music sentiment could predict national happiness levels. Countries were divided into high- and low-happiness groups using a median split of the happiness (Ladder) score.
+
+A logistic regression model was used as a baseline classifier, followed by a random forest model to capture potential non-linear relationships. Additionally, a dummy classifier predicting the most frequent class was included as a baseline for comparison.
+
+Logistic regression achieved an accuracy of 36.8%, while the random forest classifier achieved an accuracy of 31.6%. Both models performed worse than the dummy classifier, which achieved an accuracy of 47.4%. These results indicate that average music sentiment does not provide meaningful predictive information for distinguishing between high- and low-happiness countries.
+
+The poor performance across both linear and non-linear models suggests that the lack of predictive power is not due to model choice but rather to the absence of a strong relationship between the features and the target variable. These findings are consistent with earlier non-parametric statistical tests, which showed no significant difference in music sentiment between happiness groups.
+
+## Limitations and Future Work
+
+This study relies on aggregated country-level music sentiment, which may obscure individual-level emotional responses to music. Cultural differences in music consumption, language, and genre preferences are also not captured in the analysis. Furthermore, the sentiment scores are derived from textual or audio features that may not fully reflect emotional experience.
+
+Future work could incorporate richer features such as genre distributions, temporal trends, or individual-level listening behavior. Combining music data with socio-economic indicators or longitudinal happiness measures may also provide deeper insights into the complex relationship between music and well-being.
