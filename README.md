@@ -93,3 +93,7 @@ The poor performance across both linear and non-linear models suggests that the 
 This study relies on aggregated country-level music sentiment, which may obscure individual-level emotional responses to music. Cultural differences in music consumption, language, and genre preferences are also not captured in the analysis. Furthermore, the sentiment scores are derived from textual or audio features that may not fully reflect emotional experience.
 
 Future work could incorporate richer features such as genre distributions, temporal trends, or individual-level listening behavior. Combining music data with socio-economic indicators or longitudinal happiness measures may also provide deeper insights into the complex relationship between music and well-being.
+
+## AI Usage Disclosure
+AI tools were used in a supportive role to improve the clarity of written explanations, assist with minor code debugging, and refine statistical interpretations. All data analysis, modeling, and conclusions were conducted independently by the student.
+
